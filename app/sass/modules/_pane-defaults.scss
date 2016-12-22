@@ -1,0 +1,75 @@
+.pane {
+
+  &__buttons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  &__button {
+    position: relative;
+    font-size: 0.6em;
+    padding: 5px 6px;
+    border-radius: 30px;
+    line-height: 0;
+    color: $ui-white;
+    cursor: pointer;
+
+    margin-left: 5px;
+
+    &:before {
+      cursor: pointer;
+    }
+
+    &--close {
+      background: lightcoral;
+
+      &:hover {
+        background: darken(lightcoral, 5%);
+      }
+    }
+
+    &--minimize {
+      background: sandybrown;
+      padding: 5px 7px;
+
+      &:hover {
+        background: darken(sandybrown, 5%);
+      }
+    }
+
+    &--maximize {
+      background: lightgreen;
+      padding: 5px 7px;
+
+      &:hover {
+        background: darken(lightgreen, 5%);
+      }
+    }
+  }
+
+  &__header {
+    background: #fff;
+    margin: 0;
+    padding: 10px;
+    font-family: 'medium';
+    font-weight: 100;
+    color: $ui-font-black;
+    // border-top-right-radius: 90px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+    font-size: 1em;
+    height: 40px;
+    width: 100%;
+    display: block;
+  }
+
+  &__footer {
+    background: #fff;
+    display: block;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+    height: 20px;
+  }
+}
